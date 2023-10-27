@@ -32,6 +32,8 @@ public class Main {
             }
         }
 
+        System.out.println("Enter weapons (keep it blank if you want to play with default options): ");
+
         List<String> options = new ArrayList<>();
         String inputOptions = sc.nextLine();
         if (inputOptions.isBlank()) {
@@ -43,6 +45,7 @@ public class Main {
         System.out.println("Okay, let's start");
 
         while (true) {
+            System.out.print("Enter an option: ");
             String playerInput = sc.nextLine();
 
             if (playerInput.equals("!exit")) {
